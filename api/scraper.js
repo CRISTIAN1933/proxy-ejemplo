@@ -2,8 +2,13 @@ import puppeteer from "puppeteer";
 
 export default async function handler(req, res) {
   const { url } = req.query;
+
+  // ✅ Prueba mínima: si no hay url, devolvemos mensaje de prueba
   if (!url) {
-    return res.status(400).json({ error: "Falta parámetro url" });
+    return res.status(200).json({
+      message: "Funciona el endpoint",
+      ejemplo: "Agrega ?url=https://librefutboltv.su/tyc-sports/ para probar Puppeteer"
+    });
   }
 
   try {
