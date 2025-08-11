@@ -1,0 +1,12 @@
+{
+  "name": "proxy-scraper",
+  "version": "1.0.0",
+  "description": "Proxy con Puppeteer para capturar requests de una página",
+  "main": "api/scraper.js",
+  "scripts": {
+    "start": "node api/scraper.js"
+  },
+  "dependencies": {
+    "puppeteer": "^22.0.0"
+  }
+}
